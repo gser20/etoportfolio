@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! I'm [Your Name], a passionate developer/designer/etc. with a love for [your expertise]. I specialize in [list of skills or tools], and I enjoy working on projects that involve [specific areas of interest].</p>
+        <p>With [X] years of experience in the industry, I have worked on various projects, ranging from [mention specific types of projects]. I'm always excited to take on new challenges and learn new technologies.</p>
+        <p>In my free time, I enjoy [personal interests or hobbies that add personality].</p>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I've worked on recently:</p>
+        <ul>
+            <li><strong>Project 1</strong> - A brief description of the project, its technologies, and what you achieved.</li>
+            <li><strong>Project 2</strong> - Another description of a project, focusing on its uniqueness or challenges.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch or learn more about my work, feel free to fill out the form below:</p>
+        <form action="YOUR_FORM_SUBMISSION_URL" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <button onclick="location.href='{% url 'second_page' %}'">Go to Second Page</button>
+</body>
+</html>

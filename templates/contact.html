@@ -1,0 +1,7 @@
+<h2>Contact Me</h2>
+<p>If you'd like to get in touch, please fill out the form below:</p>
+<form method="post" action="{% url 'contact' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Send Message</button>
+</form>
